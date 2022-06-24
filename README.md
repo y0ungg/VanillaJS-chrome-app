@@ -1,6 +1,20 @@
 ## 바닐라JS 복습 <크롬 앱 만들기> 클론코딩
-### Day2
+
+### Day 3
+Clock (호출 스케줄링)
+---
+`setInterval(callback, delay, arg0, arg1 ...)`: ms초마다 callback 함수 실행  
+`setTimeout(callback, ms, arg0, arg1 ...)`: ms초 후 callback 실행
+
+args =  함수에 전달할 인수
+  
+`string.padStart(num, str)`
+string.length < num이면, num이 될때까지 앞에 str을 추가한다.  
+`padEnd()`: 반대로 뒤에 str을 추가한다.
+
+### Day 2
 form 입력값 받아와서 username 출력하기
+---
 localStorage에 username 저장하기
 localStorage.setItem(key, value)
 localStorage.getItem(key)
@@ -10,6 +24,7 @@ localStorage.removeItem(key)
 ### Day 1
 
 DOM : HTML을 JavaScript object처럼 접근할 수 있는 model
+---
 ```js
 console.dir(document.body)
 
