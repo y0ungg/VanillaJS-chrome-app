@@ -1,4 +1,16 @@
 ## 바닐라JS 복습 <크롬 앱 만들기> 클론코딩
+
+### Day 5
+To Do List  
+
+DOM으로 접근하여 input value를 받고, 버튼으로 삭제하고, 로컬 스토리지에 저장한다.  
+
+`삭제할요소.remove()` 
+`JSON.stringify(array)`: 문자열로 바꾸기 위해 사용 (배열처럼 생긴 문자열)  
+`JSON.parse(JSON.stringify(array))`: 문자열을 실제 배열로 변환하기 위해 사용
+
+
+---
 ### Day 4
 Quotes and Background
 
