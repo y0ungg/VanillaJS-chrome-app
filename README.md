@@ -1,19 +1,33 @@
 ## 바닐라JS 복습 <크롬 앱 만들기> 클론코딩
 
 ### Day 6
-To Do List - Delete 구현  
-local storage의 todos 지우기
+- To Do List - Delete 구현  
+- local storage의 todos 지우기
 
 기존에 배열의 문자열 요소로 push했던 todo list를 object로 형태로 구성했다.   
 todo list 객체 속성은 {text: 사용자가 입력한 값, ID: Date.now()} 으로 준다.
 
 `array.filter`: 지우고 싶은 item을 제외하고 새 array를 만든다.
   
-html 요소의 id 값이 숫자여도 숫자로 이루어진 문자열인 상태이기 때문에 `parseInt(li.id)` 숫자로 형변환이 필요하다.
+html 요소의 id 값이 숫자여도 숫자로 이루어진 문자열인 상태이기 때문에 `parseInt(li.id)` 숫자로 형변환이 필요하다.  
+  
+- Weather  
+
+위치 정보를 받아와서 날씨를 표시한다.    
+https://developer.mozilla.org/ko/docs/Web/API/Geolocation/getCurrentPosition  
+
+`navigator.geolocation.getCurrentPosition(resolve함수, reject함수)` : 장치의 현재 위치를 가져온다.  
+  
+위의 함수로 받아온 사용자 위치 정보를 Open API를 통해 날씨 정보를 가져온다. 
+
+`fetch()`: API를 비동기 호출한다.  
+fetch로 API를 호출해와서 받아온 data를 dom으로 html 요소에 넣어주었다.
+  
+
 
 ---
 ### Day 5
-To Do List  
+- To Do List  
 
 DOM으로 접근하여 input value를 받고, 버튼으로 삭제하고, 로컬 스토리지에 저장한다.  
 
@@ -33,7 +47,7 @@ DOM으로 접근하여 input value를 받고, 버튼으로 삭제하고, 로컬 
 
 ---
 ### Day 4
-Quotes and Background
+- Quotes and Background
 
 Math.random() 메서드를 사용해서 랜덤 명언, 랜덤 배경 사진을 출력한다.
 
@@ -45,7 +59,7 @@ prepend(): append와 반대로 요소를 맨 앞으로 prepending한다. (앞에
 
 ---
 ### Day 3
-Clock (호출 스케줄링)
+- Clock (호출 스케줄링)
 
 `setInterval(callback, delay, arg0, arg1 ...)`: ms초마다 callback 함수 실행  
 `setTimeout(callback, ms, arg0, arg1 ...)`: ms초 후 callback 실행
@@ -59,7 +73,7 @@ string.length < num이면, num이 될때까지 앞에 str을 추가한다.
   
 ---
 ### Day 2
-form 입력값 받아와서 username 출력하기
+- form 입력값 받아와서 username 출력하기
 
 localStorage에 username 저장하기
 localStorage.setItem(key, value)
